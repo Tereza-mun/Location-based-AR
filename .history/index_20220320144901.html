@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+
+  <body style="margin: 0; overflow: hidden">
+    <a-scene
+      embedded
+      loading-screen="enabled: false;"
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+    >
+      <a-image
+        src="20200115_094716-removebg-preview.png"
+        look-at="[gps-camera]"
+        scale="1 1 1"
+        gps-entity-place="latitude: 50.0701605629607; longitude: 14.46742610265817;"
+      >
+      </a-image>
+      <a-image
+        src="assets/sea-turtle/10042_Sea_Turtle_V2_iterations-2.obj"
+        look-at="[gps-camera]"
+        scale="1 1 1"
+        gps-entity-place="latitude: 50.07019370325021; longitude: 14.467447023692035;"
+      >
+      </a-image>
+
+      <a-camera
+        gps-camera
+        rotation-reader
+        arjs-look-controls="smoothingFactor: 0.1"
+        look-controls-enabled="false"
+      >
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
