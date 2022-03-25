@@ -85,7 +85,7 @@
       >
       </a-image>
       <a-image
-        src="/assets/tiger.gif"
+        src="/assets/tiger.png"
         look-at="[gps-camera]"
         scale="1 1 1"
         gps-entity-place="latitude: 49.58465470916809; longitude: 18.140048865633993;"
@@ -100,10 +100,11 @@
       </a-image>
 
       <a-camera
-        gps-camera="gpsTimeInterval: 1000"
+        gps-camera
         rotation-reader
         arjs-look-controls="smoothingFactor: 0.1"
         look-controls-enabled="false"
+        gpsTimeInterval="1000"
       >
       </a-camera>
     </a-scene>
